@@ -1,4 +1,5 @@
 // app/projects/[slug]/page.js
+import Link from 'next/link';
 
 // Esto debe ser un Componente del Servidor
 export async function generateStaticParams() {
@@ -15,7 +16,7 @@ const ProjectPage = ({ params }) => {
     "my-project": {
       title: "Mi Proyecto",
       description: "Descripción de mi proyecto.",
-      imageUrl: "URL de la imagen"
+      imageUrl: "/images/coin-custody-project.jpeg"
     },
     "project-2": {
       title: "Proyecto 2",
@@ -40,6 +41,9 @@ const ProjectPage = ({ params }) => {
       <h1>{project.title}</h1>
       <p>{project.description}</p>
       <img src={project.imageUrl} alt={project.title} />
+      <Link href="/"> {/* Enlace a la página de inicio */}
+        <button>Volver a Inicio</button>
+      </Link>
     </div>
   );
 };
