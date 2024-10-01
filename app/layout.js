@@ -3,7 +3,7 @@ import "../styles/globals.css";
 
 // Ajustar la ruta de la fuente
 const geistSans = localFont({
-  src: "./fonts/geistVF.woff",  // Asegúrate de que el nombre del archivo coincida (mayúsculas/minúsculas importan)
+  src: "./fonts/GeistVF.woff",  // Asegúrate de que el nombre del archivo coincida (mayúsculas/minúsculas importan)
 });
 
 // El componente principal de layout
