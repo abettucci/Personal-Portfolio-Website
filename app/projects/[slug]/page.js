@@ -1,14 +1,16 @@
 // app/projects/[slug]/page.js
 
-"use client";
+// Esto debe ser un Componente del Servidor
+export async function generateStaticParams() {
+  // Aquí defines los slugs disponibles para tu proyecto
+  const slugs = ['my-project', 'project-2', 'project-3']; // Simula obtener los slugs de algún lugar
+  return slugs.map(slug => ({ slug })); // Devuelve un array de objetos con el slug
+}
 
-import { useRouter } from 'next/navigation';
+// Componente del Cliente
+const ProjectPage = ({ params }) => {
+  const { slug } = params; // Ahora estás obteniendo el slug desde los parámetros
 
-const ProjectPage = () => {
-  const router = useRouter();
-  const { slug } = router.query;
-
-  // Aquí puedes obtener la información del proyecto según el slug
   const projectData = {
     "my-project": {
       title: "Mi Proyecto",
