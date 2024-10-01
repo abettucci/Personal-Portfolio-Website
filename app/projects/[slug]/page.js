@@ -1,18 +1,8 @@
 // app/projects/[slug]/page.js
 
-// Marcar este componente como un Componente del Cliente
 "use client";
 
 import { useRouter } from 'next/navigation';
-
-// Simula obtener los slugs de algún lugar (puede ser una API, archivo, etc.)
-const slugs = ['my-project', 'project-2', 'project-3']; // Reemplaza esto con tus datos reales
-
-export async function generateStaticParams() {
-  return slugs.map(slug => ({
-    slug: slug,
-  }));
-}
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -25,7 +15,6 @@ const ProjectPage = () => {
       description: "Descripción de mi proyecto.",
       imageUrl: "URL de la imagen"
     },
-    // Agrega más proyectos aquí
     "project-2": {
       title: "Proyecto 2",
       description: "Descripción del proyecto 2.",
