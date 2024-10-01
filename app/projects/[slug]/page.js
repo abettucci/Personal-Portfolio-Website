@@ -1,4 +1,4 @@
-import { useRouter } from 'next/navigation';
+"use client";
 
 const ProjectPage = () => {
   const router = useRouter();
