@@ -1,4 +1,8 @@
 // app/projects/[slug]/page.js
+
+// Marcar este componente como un Componente del Cliente
+"use client";
+
 import { useRouter } from 'next/navigation';
 
 // Simula obtener los slugs de algún lugar (puede ser una API, archivo, etc.)
@@ -9,9 +13,6 @@ export async function generateStaticParams() {
     slug: slug,
   }));
 }
-
-// Marcar este componente como un Componente del Cliente
-"use client";
 
 const ProjectPage = () => {
   const router = useRouter();
