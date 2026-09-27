@@ -151,7 +151,7 @@
       emailLink.firstChild.textContent = `${email} `;
     }
 
-    [["#github-link", contact.github], ["#linkedin-link", contact.linkedin], ["#resume-link", contact.cvUrl], ["#resume-download-link", contact.cvUrl]]
+    [["#github-link", contact.github], ["#linkedin-link", contact.linkedin], ["#resume-link", contact.cvUrl], ["#resume-download-link", contact.cvUrl], ["#header-resume-link", contact.cvUrl], ["#header-resume-download-link", contact.cvUrl]]
       .forEach(([selector, value]) => {
         const link = document.querySelector(selector);
         if (!link) return;
