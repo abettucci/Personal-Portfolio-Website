@@ -1,6 +1,6 @@
 /*
- * This is the only file you need to edit to update the portfolio.
- * Duplicate an object in a list, change its text, save, and refresh the page.
+ * Update this file to change the portfolio content.
+ * Copy an object in a list, edit its values, save, and refresh the page.
  */
 window.portfolioContent = {
   contact: {
@@ -13,30 +13,30 @@ window.portfolioContent = {
   projects: [
     {
       type: "Financial data platform · Professional work",
-      title: "From batch reporting to near-real-time financial visibility.",
-      description: "Helped evolve a Profit & Loss data product into a near-real-time flow while protecting reconciliation, traceability, and safe reprocessing. The difficult part was not moving data faster—it was keeping financial data correct when events arrived late, twice, or out of order.",
+      title: "Moving financial reporting closer to real time.",
+      description: "Helped move a Profit & Loss data product from batch reporting toward near-real-time processing. Reconciliation, traceability, and safe reprocessing had to hold when events arrived late, twice, or out of order.",
       tags: ["Event-driven", "Data quality", "Observability", "Idempotency"],
       featured: true,
       url: "",
     },
     {
       type: "Independent product · AWS serverless",
-      title: "Expense intelligence from inbox to usable data.",
-      description: "An event-driven ETL that turns receipt PDFs and payment reports into clean, categorized expense data. Built around raw-data preservation, orchestration, schema normalization, and idempotent loads.",
+      title: "Turning receipts and payment reports into expense data.",
+      description: "An event-driven ETL that reads receipt PDFs and payment reports, then produces categorized expense data. It preserves raw inputs, normalizes schemas, orchestrates the flow, and loads data idempotently.",
       tags: ["Python", "Lambda", "Step Functions", "BigQuery"],
       url: "",
     },
     {
       type: "Independent product · Real-time application",
-      title: "A copilot that keeps up with a live Twitch chat.",
-      description: "A real-time moderation and assistance workflow built with FastAPI, PostgreSQL, Redis, WebSockets, and a TypeScript dashboard. Designed to respond quickly without turning a busy chat into noise.",
+      title: "Moderation and assistance for live Twitch chat.",
+      description: "A real-time workflow built with FastAPI, PostgreSQL, Redis, WebSockets, and a TypeScript dashboard. It responds quickly enough for a live chat without adding more noise to it.",
       tags: ["FastAPI", "Redis", "WebSockets", "React"],
       url: "",
     },
     {
       type: "Independent product · Automation",
-      title: "A job scout that finds signal before the search becomes a job.",
-      description: "An automated job-discovery workflow that aggregates listings from multiple sources, scores relevance with AI assistance, maintains states, and sends a focused digest instead of another noisy feed.",
+      title: "A job search workflow that filters the noise.",
+      description: "An automated workflow that collects listings from several sources, uses AI to score relevance, tracks each listing, and sends a focused digest.",
       tags: ["Playwright", "Lambda", "DynamoDB", "Next.js"],
       url: "",
     },
@@ -44,17 +44,31 @@ window.portfolioContent = {
 
   experience: [
     {
-      period: "Current",
-      role: "Backend & Data Engineer",
+      period: "2025–2026",
+      role: "Software Engineer",
       organization: "Large-scale marketplace ecosystem",
-      description: "Working on financial and operational data products where correctness, traceability, and reliable processing are essential. Recent work includes helping move a critical reporting flow toward near-real-time visibility.",
-      focus: ["Python", "SQL", "Distributed data", "Observability"],
+      description: "Built backend and data services for financial reporting and business operations. Helped move a Profit & Loss workflow from scheduled batches toward near-real-time processing, with idempotent updates, safe retries, late-event handling, and reconciliation.",
+      focus: ["Python", "Go", "AWS", "Distributed systems"],
+    },
+    {
+      period: "2024–2025",
+      role: "Semi Senior Data Engineer",
+      organization: "Financial-services platform",
+      description: "Built ETL pipelines with GCP, Python, SQL, and BigQuery for fraud-prevention data. Improved complex queries used by the team for data processing and analysis.",
+      focus: ["Python", "SQL", "GCP", "BigQuery"],
+    },
+    {
+      period: "2022–2024",
+      role: "Semi Senior Data Analyst",
+      organization: "Consumer-goods company",
+      description: "Analyzed sales, distribution, geolocation, and socioeconomic data for customer segmentation and product-recommendation work.",
+      focus: ["Python", "Data analysis", "Machine learning"],
     },
     {
       period: "Independent",
       role: "Product builder",
       organization: "Personal software projects",
-      description: "Designing and shipping small, useful products across automation, finance, media, and information workflows—from the first idea to cloud deployment and iteration.",
+      description: "Building products for automation, finance, media, and information workflows, from the first sketch through cloud deployment and iteration.",
       focus: ["FastAPI", "AWS", "React", "AI workflows"],
     },
   ],
