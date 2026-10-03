@@ -34,7 +34,7 @@ nav a:hover::after, .social-links a:hover::after { transform: scaleX(1); }
 .eyebrow-row, .signal-strip { display: flex; justify-content: space-between; font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .eyebrow-row p { margin: 0; }
 h1, h2, h3, p { margin-top: 0; }
-h1 { max-width: 1210px; margin: 8.2vw 0 4.5vw; color: var(--paper); font: 600 clamp(3.7rem, 8.8vw, 9.4rem)/.87 var(--display); letter-spacing: -.075em; }
+h1 { max-width: 1210px; margin: 8.2vw 0 4.5vw; color: var(--paper); font: 600 clamp(3.7rem, 8.8vw, 9.4rem)/.87 var(--display); letter-spacing: -.035em; word-spacing: .025em; }
 h1 em { color: var(--acid); font-style: italic; font-weight: 500; }
 .hero-bottom { display: grid; grid-template-columns: minmax(240px, 405px) 1fr; align-items: end; gap: 2rem; }
 .intro { margin: 0; color: #d0d0c8; font-size: clamp(.9rem, 1.3vw, 1.05rem); line-height: 1.7; }
