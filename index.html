@@ -11,19 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="portfolio.css" />
     <script src="content.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
+    <a class="skip-link" href="#top">Skip to content</a>
     <div class="page-frame">
       <header class="topbar">
         <a class="monogram" href="#top" aria-label="Back to top">AB</a>
-        <p class="availability"><span></span> Available</p>
         <nav aria-label="Primary navigation">
           <a href="#work">Work</a>
           <a href="#experience">Experience</a>
@@ -39,22 +38,28 @@
       <main id="top">
         <section class="hero" aria-labelledby="hero-title">
           <div class="eyebrow-row reveal">
-            <p>Based in Buenos Aires · Working globally</p>
-            <p>01—2026</p>
+            <p>Software Engineer</p>
+            <p>Buenos Aires, Argentina</p>
           </div>
           <h1 id="hero-title" class="reveal delay-1">
-            I build backend and data systems people can <em>rely on.</em>
+            Agustín<br />Bettucci<span class="name-period">.</span>
           </h1>
           <div class="hero-bottom reveal delay-2">
             <p class="intro">
-              I work on integrations, data products, and AI tools. I like getting from an
-              unclear requirement to a system someone can run, inspect, and change.
+              I’m a software engineer working on backend services, financial data, and
+              automation. I build with Python, Go, and SQL, and spend time on what happens
+              after a system ships: late events, retries, reconciliation, and production incidents.
             </p>
             <a class="round-link" href="#work">
               <span>Selected work</span>
               <span aria-hidden="true">↓</span>
             </a>
           </div>
+          <dl class="profile-facts">
+            <div><dt>Focus</dt><dd>Backend &amp; data platforms</dd></div>
+            <div><dt>Experience</dt><dd>Commerce &amp; financial systems</dd></div>
+            <div><dt>Outside work</dt><dd>Building independent products</dd></div>
+          </dl>
           <div class="signal-strip reveal delay-3" aria-label="Core areas">
             <span>Python</span><span>Distributed data</span><span>Cloud</span><span>APIs</span><span>AI workflows</span>
           </div>
@@ -120,10 +125,9 @@
         </section>
 
         <section class="contact" id="contact" aria-labelledby="contact-title">
-          <div class="contact-orbit" aria-hidden="true"><span>BUILD</span><span>LEARN</span><span>SHIP</span><b>✦</b></div>
           <div>
             <p class="section-label">07 / Start a conversation</p>
-            <h2 id="contact-title">Have a system<br />to untangle?</h2>
+            <h2 id="contact-title">Get in touch.</h2>
             <a class="email-link" id="email-link" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a>
             <div class="social-links">
               <a id="github-link" href="#">GitHub</a><a id="linkedin-link" href="#">LinkedIn</a><a id="resume-link" href="assets/cv.pdf" target="_blank" rel="noreferrer">View CV ↗</a><a id="resume-download-link" href="assets/cv.pdf" download>Download PDF ↓</a>
